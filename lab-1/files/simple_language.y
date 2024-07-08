@@ -53,13 +53,13 @@ program:
     ;
 
 statement_list:
-    statement
-    | statement_list statement
+    statement '\n'
+    | statement_list statement '\n'
     ;
 
 statement:
     assignment
-    | expression
+    | expression '\n' { printf("Resultado: %d\n", $1); }
     ;
 
 assignment:
@@ -94,11 +94,15 @@ expression:
     | expression '/' expression
     {
         if ($3 == 0) {
-            yyerror("Error: División por cero");
+            yyerror("División por cero");
             $$ = 0;
         } else {
             $$ = $1 / $3;
         }
+    }
+    | '(' expression ')'
+    {
+        $$ = $2;
     }
     ;
 

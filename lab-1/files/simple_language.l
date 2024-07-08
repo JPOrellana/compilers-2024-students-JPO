@@ -11,8 +11,10 @@
 "-"                    { return '-'; }
 "*"                    { return '*'; }
 "/"                    { return '/'; }
+"("                    { return '('; }
+")"                    { return ')'; }
 [ \t]                  { /* ignorar espacios en blanco */ }
-\n                     { /* manejar nueva línea */ }
+\n                     { return '\n'; }
 .                      { printf("Caracter no reconocido: %s (Código ASCII: %d)\n", yytext, yytext[0]); }
 
 %%
