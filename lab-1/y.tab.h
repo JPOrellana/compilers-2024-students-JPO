@@ -54,8 +54,8 @@ extern int yydebug;
     YYEOF = 0,                     /* "end of file"  */
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
-    NUMBER = 258,                  /* NUMBER  */
-    ID = 259                       /* ID  */
+    ID = 258,                      /* ID  */
+    NUMBER = 259                   /* NUMBER  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -64,17 +64,19 @@ extern int yydebug;
 #define YYEOF 0
 #define YYerror 256
 #define YYUNDEF 257
-#define NUMBER 258
-#define ID 259
+#define ID 258
+#define NUMBER 259
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 10 "./files/simple_language.y"
- int num; std::string *str; 
+#line 40 "./files/simple_language.y"
 
-#line 78 "y.tab.h"
+    int intval;
+    char *strval;
+
+#line 80 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;

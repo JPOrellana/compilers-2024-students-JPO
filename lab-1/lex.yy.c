@@ -362,8 +362,8 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[17] =
     {   0,
-        0,    0,   12,   10,    9,    5,    3,    4,    6,    2,
-        8,    7,    1,    2,    1,    0
+        0,    0,   12,   10,    8,    9,    6,    4,    5,    7,
+        2,    3,    1,    2,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -373,15 +373,15 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    4,    5,    1,    6,    1,    7,    8,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    9,    1,    1,
-       10,    1,    1,    1,   11,   11,   11,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-        1,    1,    1,    1,    1,    1,   11,   11,   11,   11,
+        8,    8,    8,    8,    8,    8,    8,    1,    1,    1,
+        9,    1,    1,    1,   10,   10,   10,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+        1,    1,    1,    1,    1,    1,   10,   10,   10,   10,
 
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-       11,   11,   11,   11,   11,   11,   11,   11,   11,   11,
-       11,   11,    1,    1,    1,    1,    1,    1,    1,    1,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       10,   10,   10,   10,   10,   10,   10,   10,   10,   10,
+       10,   10,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -398,16 +398,15 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[12] =
+static const YY_CHAR yy_meta[11] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    2,    1,    1,
-        2
+        1,    1,    1,    1,    1,    1,    1,    2,    1,    2
     } ;
 
 static const flex_int16_t yy_base[18] =
     {   0,
-        0,    0,   15,   16,   16,   16,   16,   16,   16,    6,
-       16,   16,    0,    5,    0,   16,   10
+        0,    0,   14,   15,   15,   15,   15,   15,   15,   15,
+        5,   15,    0,    4,    0,   15,    9
     } ;
 
 static const flex_int16_t yy_def[18] =
@@ -416,18 +415,18 @@ static const flex_int16_t yy_def[18] =
        16,   16,   17,   16,   17,    0,   16
     } ;
 
-static const flex_int16_t yy_nxt[28] =
+static const flex_int16_t yy_nxt[26] =
     {   0,
-        4,    5,    4,    6,    7,    8,    9,   10,   11,   12,
-       13,   15,   14,   14,   16,    3,   16,   16,   16,   16,
-       16,   16,   16,   16,   16,   16,   16
+        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
+       15,   14,   14,   16,    3,   16,   16,   16,   16,   16,
+       16,   16,   16,   16,   16
     } ;
 
-static const flex_int16_t yy_chk[28] =
+static const flex_int16_t yy_chk[26] =
     {   0,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,   17,   14,   10,    3,   16,   16,   16,   16,   16,
-       16,   16,   16,   16,   16,   16,   16
+       17,   14,   11,    3,   16,   16,   16,   16,   16,   16,
+       16,   16,   16,   16,   16
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -446,11 +445,9 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "./files/simple_language.l"
 #line 2 "./files/simple_language.l"
-#include <cstdlib>
-#include <string>
 #include "y.tab.h"
-#line 453 "lex.yy.c"
-#line 454 "lex.yy.c"
+#line 450 "lex.yy.c"
+#line 451 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -667,10 +664,10 @@ YY_DECL
 		}
 
 	{
-#line 7 "./files/simple_language.l"
+#line 5 "./files/simple_language.l"
 
 
-#line 674 "lex.yy.c"
+#line 671 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -703,7 +700,7 @@ yy_match:
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 16 );
+		while ( yy_base[yy_current_state] != 15 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -729,61 +726,61 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 9 "./files/simple_language.l"
-{ yylval.str = new std::string(yytext);  return ID; }
+#line 7 "./files/simple_language.l"
+{ yylval.strval = strdup(yytext); return ID; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 "./files/simple_language.l"
-{ yylval.num = strtol(yytext, NULL, 10); return NUMBER; }
+#line 8 "./files/simple_language.l"
+{ yylval.intval = atoi(yytext); return NUMBER; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 11 "./files/simple_language.l"
-{ return '+'; }
+#line 9 "./files/simple_language.l"
+{ return '='; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 12 "./files/simple_language.l"
-{ return '-'; }
+#line 10 "./files/simple_language.l"
+{ return '+'; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 13 "./files/simple_language.l"
-{ return '*'; }
+#line 11 "./files/simple_language.l"
+{ return '-'; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 14 "./files/simple_language.l"
-{ return '/'; }
+#line 12 "./files/simple_language.l"
+{ return '*'; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 15 "./files/simple_language.l"
-{ return '='; }
+#line 13 "./files/simple_language.l"
+{ return '/'; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 16 "./files/simple_language.l"
-{ return ':'; }
+#line 14 "./files/simple_language.l"
+{ /* ignorar espacios en blanco */ }
 	YY_BREAK
 case 9:
+/* rule 9 can match eol */
 YY_RULE_SETUP
-#line 17 "./files/simple_language.l"
-;  // skip whitespace
+#line 15 "./files/simple_language.l"
+{ /* manejar nueva línea */ }
 	YY_BREAK
 case 10:
-/* rule 10 can match eol */
 YY_RULE_SETUP
-#line 18 "./files/simple_language.l"
-; /* ignore all the rest */
+#line 16 "./files/simple_language.l"
+{ printf("Caracter no reconocido: %s (Código ASCII: %d)\n", yytext, yytext[0]); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 20 "./files/simple_language.l"
+#line 18 "./files/simple_language.l"
 ECHO;
 	YY_BREAK
-#line 787 "lex.yy.c"
+#line 784 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1788,9 +1785,10 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 20 "./files/simple_language.l"
+#line 18 "./files/simple_language.l"
 
 
 int yywrap() {
     return 1;
 }
+
